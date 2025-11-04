@@ -1,0 +1,15 @@
+Nosso projeto está sendo estruturado com arquitetura em camadas.
+
+com.lucabotini.cadastrousuario
+│
+├── business
+│   └── controller       → lógica de negócio / controladores
+│
+└── infrastructure
+    ├── entitys          → entidades do banco (modelo JPA)
+    └── repository       → interfaces de acesso ao banco
+
+
+
+Para usar os métodos de salvar, buscar, atualizar e deletar nós utilizamos o repository
+para usarmos o repository precisamos injetar a dependencia do repository dentro da classe service.
