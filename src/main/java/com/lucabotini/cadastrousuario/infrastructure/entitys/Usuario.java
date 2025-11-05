@@ -23,6 +23,4 @@ public class Usuario {
     @Column(name = "nome") //indica que o campo é uma coluna na tabela.
     private String nome;
 
-
-
 }
